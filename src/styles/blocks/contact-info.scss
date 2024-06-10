@@ -1,6 +1,7 @@
 .address-link {
   text-decoration: none;
   color: $text-color;
+  transition: $transition-time;
 
   &:hover {
     color: $hover-text-color;

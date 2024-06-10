@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
+  width: 100%;
 
   @include top-bar-height;
 
@@ -57,12 +58,13 @@
       line-height: 16px;
       letter-spacing: 2px;
       display: flex;
-      width: 148px;
+      width: 180px;
       text-decoration: none;
       color: $text-color;
       position: absolute;
       left: -158px;
-      top: 10px;
+      height: 32px;
+      align-items: center;
       }
     }
   }
