@@ -3,6 +3,7 @@
   color: $text-color;
   background-color: $page-bg-color;
   scroll-behavior: smooth;
+  position: relative;
 
   &__body {
     overflow-x: hidden;
@@ -24,7 +25,15 @@
 }
 
 .page:has(.page__menu:target) {
-  overflow: hidden;
+  @media (max-height: 480px) {
+    .hidden {
+      display: none;
+    }
+  }
+
+  @media (min-height: 480px) {
+    overflow: hidden;
+  }
 }
 
 .image {

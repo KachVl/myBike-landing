@@ -35,6 +35,7 @@
   flex-direction: column;
 
   &__message {
+    font-family: Poppins, sans-serif;
     box-sizing: border-box;
     display: flex;
     background-color: $input-bg;
@@ -47,13 +48,14 @@
     color: $input-text-color;
     line-height: 20px;
     min-height: 148px;
+    outline: none;
 
     &:hover {
       border: 1px solid $input-border-hover-color;
     }
 
     &:active {
-      border: 1px solid #292929;
+      border: 1px solid $input-border-hover-color;
     }
 
     &::placeholder {
@@ -74,6 +76,7 @@
     margin-top: 32px;
     margin-bottom: 48px;
     transition: $transition-time;
+    outline: none;
 
     &:active {
       @include button-active;
@@ -90,6 +93,7 @@
 }
 
 .contact-input {
+  font-family: Poppins, sans-serif;
   box-sizing: border-box;
   background-color: $input-bg;
   height: $input-height;
@@ -101,13 +105,12 @@
   color: $input-text-color;
   line-height: 20px;
   transition: $transition-time;
+  outline: none;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus  {
     border: 1px solid $input-border-hover-color;
-  }
-
-  &:active {
-    border: 1px solid #292929;
   }
 
   &::placeholder {

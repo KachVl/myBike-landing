@@ -6,15 +6,16 @@
   overflow: auto;
   height: 100vh;
 
+  @media (max-height: 480px) {
+    min-height: 480px;
+    position: absolute;
+
+    @media (min-width: 660px) {
+      min-height: 628px;
+    }
+  }
+
   @include content-padding-inline;
-
-  @include on-tablet {
-    height: 628px;
-  }
-
-  @include on-pc {
-    height: 100vh;
-  }
 
   &__tel {
     display: flex;
@@ -36,7 +37,6 @@
   }
 
   &__top {
-    position: sticky;
     z-index: 1;
   }
 }
