@@ -49,6 +49,7 @@
     line-height: 20px;
     min-height: 148px;
     outline: none;
+    border: none;
 
     &:hover {
       border: 1px solid $input-border-hover-color;
@@ -77,6 +78,7 @@
     margin-bottom: 48px;
     transition: $transition-time;
     outline: none;
+    border: none;
 
     &:active {
       @include button-active;
@@ -106,6 +108,7 @@
   line-height: 20px;
   transition: $transition-time;
   outline: none;
+  border: none;
 
   &:hover,
   &:active,
